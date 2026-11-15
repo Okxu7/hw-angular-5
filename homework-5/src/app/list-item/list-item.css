@@ -1,0 +1,9 @@
+.list-element {
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  background-color: #f0f4f8;
+  border-left: 4px solid #3f51b5;
+  border-radius: 4px;
+  list-style-type: none;
+  font-size: 16px;
+}

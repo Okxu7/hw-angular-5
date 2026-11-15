@@ -1,0 +1,39 @@
+.card {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+
+.product-color {
+  margin:   6px;
+ 
+}
+b {
+  background-color: rgb(246, 72, 8); /* або динамічний колір через [style.background-color] */
+  padding: 8px 16px;          /* розширює фон зверху/знизу та з боків */
+  display: inline-block;      /* потрібно для того, щоб padding коректно працював для інлайн-тегу */
+  margin: 4px;                /* необов'язково: відступ між елементами */
+}
+/* div.product-color b{
+  display: inline-block;
+   padding: 16px !important;
+
+  border-radius: 5px;
+} */
+
+button {
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}

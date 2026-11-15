@@ -1,0 +1,10 @@
+<p>list-item works!</p>
+  
+
+<li class="list-element">
+  <!-- Спосіб 1: вывод через @Input виводиться, якщо передано через [itemText]="..." -->
+  <span *ngIf="itemText">{{ itemText }}</span>
+
+  <!-- Спосіб 2: вывод через <ng-content> сюди підставляється текст, переданий між тегами <app-list-item>...</app-list-item> -->
+  <ng-content></ng-content>
+</li> 

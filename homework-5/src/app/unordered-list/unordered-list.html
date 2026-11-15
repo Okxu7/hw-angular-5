@@ -1,0 +1,23 @@
+<p>unordered-list works!</p>
+<h2> компоненти unordered-list та list-item. Завдання unordered-list відображатиме пункти списку з текстом. Дані знаходяться у вигляді масиву рядків у батьківського компонента (appunordered-list). Дочірній компонент list-item отримані від батьків дані виводить у своєму шаблоні. </h2>
+
+<div class="lists-container">
+  <div class="list-box">
+    <h3>Спосіб 1: Через Input</h3>
+    <ul>
+      <app-list-item 
+        *ngFor="let item of listItems" 
+        [itemText]="item">
+      </app-list-item>
+    </ul>
+  </div>
+
+  <div class="list-box">
+    <h3>Спосіб 2: Через ng-content</h3>
+    <ul>
+      <app-list-item *ngFor="let item of listItems">
+        {{ item }}
+      </app-list-item>
+    </ul>
+  </div>
+</div>

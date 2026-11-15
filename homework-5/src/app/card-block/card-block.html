@@ -1,0 +1,23 @@
+<p>card-block works!</p>
+<!-- <div class="card">
+  <h3>{{ product.name }}</h3>
+  <p>Код: {{ product.id }}</p>
+  <p><b>Ціна: {{ product.price }} грн</b></p>
+
+  <button type="button" (click)="showInfo()">Ознайомитися</button>
+</div> -->
+
+<div class="card">
+  <h3>{{ product.name }}</h3>
+  <p>Код: {{ product.id }}</p>
+  
+  <!-- ЗАВДАННЯ 2: Віднімаємо знижку при виведенні, не змінюючи product.price -->
+  <p><b>Ціна: {{ product.price - discount }} грн</b></p>
+
+     <!-- вставляє в дочірній компонент той HTML-контент, який ми передали з батьківського. -->
+  <!-- Місце для переданого контенту -->
+  <div class="product-color">
+    <ng-content></ng-content>
+  </div>
+  <button type="button" (click)="showInfo()">Ознайомитися</button>
+</div>

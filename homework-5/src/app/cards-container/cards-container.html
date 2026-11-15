@@ -1,0 +1,55 @@
+<p>cards-container works!</p>
+ 
+<!-- Блок для відображення ВСІЄЇ інформації про вибраний товар (разом з description) -->
+<!-- <div class="product">
+  <div *ngIf="selectedProduct">
+    <h3>Повна інформація про товар:</h3>
+    <p><b>ID:</b> {{ selectedProduct.id }}</p>
+    <p><b>Назва:</b> {{ selectedProduct.name }}</p>
+    <p><b>Ціна:</b> {{ selectedProduct.price }} грн</p>
+    <p><b>Опис:</b> {{ selectedProduct.description }}</p>
+  </div>
+
+  <p *ngIf="!selectedProduct">
+    Натисніть «Ознайомитися» на будь-якій картці нижче, щоб побачити деталі товару.
+  </p>
+</div>
+
+<!-- Виведення дочірніх компонентів під блоком .product -->
+<!-- <div class="cards-list">
+  <app-card-block
+    *ngFor="let product of products"
+    [product]="product"
+    (selectProduct)="onSelectProduct($event)">
+  </app-card-block>
+</div> -->  
+
+<!-- ЗАВДАННЯ 2: Кнопка «Хочу знижку» над розміткою попереднього завдання -->
+<button type="button" class="discount-btn" (click)="giveDiscount()">
+  Хочу знижку
+</button>
+
+<!-- Розмітка Завдання 1 -->
+<div class="product">
+  <div *ngIf="selectedProduct">
+    <h3>Повна інформація про товар:</h3>
+    <p><b>ID:</b> {{ selectedProduct.id }}</p>
+    <p><b>Назва:</b> {{ selectedProduct.name }}</p>
+    <p><b>Початкова ціна (price):</b> {{ selectedProduct.price }} грн</p>
+    <p><b>Опис:</b> {{ selectedProduct.description }}</p>
+  </div>
+
+  <p *ngIf="!selectedProduct">
+    Натисніть «Ознайомитися» на будь-якій картці нижче, щоб побачити деталі товару.
+  </p>
+</div>
+
+<div class="cards-list">
+  <app-card-block
+    *ngFor="let product of products"
+    [product]="product"
+    (selectProduct)="onSelectProduct($event)">
+ <b #colorTag class="color-tag">{{ product.color }}</b>   
+      <!--  виводить назву кольору. -->
+  </app-card-block>
+</div>
